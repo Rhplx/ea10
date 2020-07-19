@@ -1,0 +1,41 @@
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  img {
+    margin: 20px 0;
+  }
+  .contenedorEnlaces {
+    position: relative;
+    ul {
+      list-style: none;
+
+      li {
+        display: inline-block;
+        font-size: 20px;
+        margin: 5px 20px;
+        cursor: pointer;
+
+        a {
+          text-decoration: none;
+          &:visited {
+            color: black;
+          }
+        }
+      }
+    }
+    .tiposPrestamos {
+      display: none;
+      position: absolute;
+      background-color: rgba(255, 255, 255, 0.26);
+      max-width: 220px;
+      padding: 20px 10px;
+      left: -10px;
+      ul {
+        li {
+          display: block;
+        }
+      }
+    }
+  }
+}
