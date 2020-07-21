@@ -4,6 +4,10 @@ import Caracteristica1 from "../../assets/images/Estrella.png";
 import Caracteristica2 from "../../assets/images/Porcentaje.png";
 import Caracteristica3 from "../../assets/images/Reloj.png";
 import Caracteristica4 from "../../assets/images/Papeles.png";
+import Beneficio1 from "../../assets/images/procedimiento.png";
+import Beneficio2 from "../../assets/images/nomina.png";
+import Beneficio3 from "../../assets/images/personales.png";
+import Beneficio4 from "../../assets/images/PyMES.png";
 
 export default class Home extends Component {
   render() {
@@ -59,6 +63,49 @@ export default class Home extends Component {
             <div className="caracteristicaUnica">
               <img src={Caracteristica4} alt="Caracteristica" />
               <p>Pagos fijos durante todo el crédito</p>
+            </div>
+          </div>
+        </section>
+        <section className="tipos">
+          <div className="contenedorTipos">
+            <h1>
+              Nuestros créditos de adaptan a <span>tus necesidades</span>, logra
+              todos tus objetivos <span> sin complicaciones</span> y en poco
+              tiempo
+            </h1>
+            <div className="tiposPrestamos">
+              <div className="tipoPrestamo">
+                <img src={Beneficio1} alt="Beneficio" />
+                <h5>Procedimientos Médicos</h5>
+                <p>
+                  Financiamiento para todo tipo de cirugía estética, general o
+                  tratamiento sin restricción alguna.{" "}
+                </p>
+              </div>
+              <div className="tipoPrestamo">
+                <img src={Beneficio2} alt="Beneficio" />
+                <h5>Via Nómina</h5>
+                <p>
+                  Financiamiento otorgado a empleados de empresas bajo convenios
+                  asociados a EA10 SupportMéxico.{" "}
+                </p>
+              </div>
+              <div className="tipoPrestamo">
+                <img src={Beneficio3} alt="Beneficio" />
+                <h5>Personales</h5>
+                <p>
+                  Prestamos diseñados para el cumplimento de metas y objetivos
+                  personales
+                </p>
+              </div>
+              <div className="tipoPrestamo">
+                <img src={Beneficio4} alt="Beneficio" />
+                <h5>PYMES</h5>
+                <p>
+                  Otorgamiento de créditos financieros adecuándonos a las
+                  necesidades del negocio y/o proyecto
+                </p>
+              </div>
             </div>
           </div>
         </section>
