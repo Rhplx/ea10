@@ -37,7 +37,9 @@ export default class Navigation extends Component {
             </ul>
             <div id="prestamos" className="tiposPrestamos">
               <ul>
-                <li>Procedimientos medicos</li>
+                <li>
+                  <Link to="/">Procedimientos medicos</Link>
+                </li>
                 <li>
                   <Link to="/">Nomina</Link>
                 </li>

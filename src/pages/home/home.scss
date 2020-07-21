@@ -1,0 +1,73 @@
+.principal {
+  background-image: url("../../assets/images/imagenPrincipal.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-top: 50px;
+  padding: 50px 0;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+
+  .textoPrincipal {
+    text-align: center;
+    padding: 30px;
+
+    h1 {
+      font-size: 30px;
+    }
+    p {
+      font-size: 15px;
+    }
+  }
+
+  .selectorPrestamo {
+    color: white;
+    min-width: 300px;
+    background-color: #4779fb;
+    padding: 20px;
+
+    h2 {
+      font-weight: normal;
+      margin: 20px 0 40px;
+      font-size: 30px;
+    }
+    .datosPrestamo {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      margin-top: 30px;
+
+      div {
+        label {
+          text-align: left;
+          display: block;
+        }
+        input {
+          background-color: transparent;
+          border: none;
+          color: var(--AquaGreen);
+        }
+      }
+    }
+    button {
+      float: right;
+      margin: 20px 10px 20px 0;
+      background-color: var(--AquaGreen);
+      border: none;
+      padding: 8px 20px;
+      border-radius: 10px;
+    }
+  }
+}
+.caracteristicas {
+  .contenedorCaracteristicas {
+    width: 90%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    padding: 50px 0;
+
+    .caracteristicaUnica {
+      text-align: center;
+    }
+  }
+}
