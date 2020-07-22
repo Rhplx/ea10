@@ -10,11 +10,13 @@ import Beneficio3 from "../../assets/images/personales.png";
 import Beneficio4 from "../../assets/images/PyMES.png";
 import Circulo from "../../assets/images/circulo.png";
 import Footer from "../../components/footer/footer.jsx";
+import Navigation from "../../components/navigation/navigation.jsx";
 
 export default class Home extends Component {
   render() {
     return (
       <>
+        <Navigation />
         <section className="principal">
           <div className="textoPrincipal">
             <h1>No cambies tu felicidad por dinero</h1>

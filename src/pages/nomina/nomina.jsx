@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-
+import Navigation from "../../components/navigation/navigation.jsx";
 import imagenNomina from "../../assets/images/vianomina.png";
 import Footer from "../../components/footer/footer.jsx";
 
@@ -7,6 +7,7 @@ export default class Nomina extends Component {
   render() {
     return (
       <>
+        <Navigation />
         <div className="prestamoUnico">
           <div className="imagenPrestamo">
             <img src={imagenNomina} alt="Tratamiento" />
@@ -46,9 +47,9 @@ export default class Nomina extends Component {
               <li> Llenado de solicitud de crédito</li>
               <li>Firma de documentación</li>
             </ul>
-          </div>
-          <div className="contenedorBoton">
-            <button>Contáctanos</button>
+            <div className="contenedorBoton">
+              <button>Contáctanos</button>
+            </div>
           </div>
         </div>
         <Footer />R

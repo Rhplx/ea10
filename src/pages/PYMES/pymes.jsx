@@ -1,11 +1,15 @@
 import React, { Component } from "react";
-import imagenPymes from "../../assets/images/viaPymes.png";
+import imagenPymes from "../../assets/images/img_pymes.jpg";
+import Navigation from "../../components/navigation/navigation.jsx";
+
 import Footer from "../../components/footer/footer.jsx";
 
 export default class Tratamientos extends Component {
   render() {
     return (
       <>
+        <Navigation />
+
         <div className="prestamoUnico">
           <div className="imagenPrestamo">
             <img src={imagenPymes} alt="PYMES" />
@@ -63,9 +67,9 @@ export default class Tratamientos extends Component {
               <li> Llenado de solicitud de crédito</li>
               <li>Firma de documentación</li>
             </ul>
-          </div>
-          <div className="contenedorBoton">
-            <button>Contáctanos</button>
+            <div className="contenedorBoton">
+              <button>Contáctanos</button>
+            </div>
           </div>
         </div>
 

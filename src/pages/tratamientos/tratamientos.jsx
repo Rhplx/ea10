@@ -1,12 +1,14 @@
 import React, { Component } from "react";
-
-import imagenTratamiento from "../../assets/images/tratamiento.png";
+import Navigation from "../../components/navigation/navigation.jsx";
+import imagenTratamiento from "../../assets/images/Img_pm.jpg";
 import Footer from "../../components/footer/footer.jsx";
 
 export default class Tratamientos extends Component {
   render() {
     return (
       <>
+        <Navigation />
+
         <div className="prestamoUnico">
           <div className="imagenPrestamo">
             <img src={imagenTratamiento} alt="Tratamiento" />
@@ -55,9 +57,9 @@ export default class Tratamientos extends Component {
               <li> Llenado de solicitud de crédito</li>
               <li>Firma de documentación</li>
             </ul>
-          </div>
-          <div className="contenedorBoton">
-            <button>Contáctanos</button>
+            <div className="contenedorBoton">
+              <button>Contáctanos</button>
+            </div>
           </div>
         </div>
         <Footer />

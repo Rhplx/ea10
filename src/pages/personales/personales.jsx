@@ -1,12 +1,14 @@
 import React, { Component } from "react";
-
-import imagenPersonales from "../../assets/images/viaPersonales.png";
+import Navigation from "../../components/navigation/navigation.jsx";
+import imagenPersonales from "../../assets/images/img_pp.jpg";
 import Footer from "../../components/footer/footer.jsx";
 
 export default class Personales extends Component {
   render() {
     return (
       <>
+        <Navigation />
+
         <div className="prestamoUnico">
           <div className="imagenPrestamo">
             <img src={imagenPersonales} alt="Tratamiento" />
@@ -50,9 +52,9 @@ export default class Personales extends Component {
               <li> Llenado de solicitud de crédito</li>
               <li>Firma de documentación</li>
             </ul>
-          </div>
-          <div className="contenedorBoton">
-            <button>Contáctanos</button>
+            <div className="contenedorBoton">
+              <button>Contáctanos</button>
+            </div>
           </div>
         </div>
         <Footer />
