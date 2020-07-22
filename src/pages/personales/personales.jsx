@@ -1,26 +1,25 @@
 import React, { Component } from "react";
 
-import imagenTratamiento from "../../assets/images/tratamiento.png";
+import imagenPersonales from "../../assets/images/viaPersonales.png";
 import Footer from "../../components/footer/footer.jsx";
 
-export default class Tratamientos extends Component {
+export default class Personales extends Component {
   render() {
     return (
       <>
         <div className="prestamoUnico">
           <div className="imagenPrestamo">
-            <img src={imagenTratamiento} alt="Tratamiento" />
+            <img src={imagenPersonales} alt="Tratamiento" />
           </div>
           <div className="textoPrestamo">
-            <h1> Créditos para cirugías y tratamientos médicos</h1>
+            <h1> Prestamos personales</h1>
             <p>
-              Financiamiento de cualquier cirugía estética, general o
-              tratamiento sin restricción alguna. Donde el paciente, familiar o
-              amigo puede realizar la solicitud de crédito.
+              Prestamos diseñados para el cumplimento de metas y objetivos
+              personales.
             </p>
             <ul>
               <li>Limite de Crédito desde $5,000 hasta $80,000.00</li>
-              <li>Tasas mensual desde 5.5%</li>
+              <li>Tasas mensual desde 11.3%</li>
               <li>Pagos fijos durante todo el crédito</li>
               <li> Plazos de 12 a 24 meses</li>
               <li>Tramite rápido y sencillo</li>
@@ -32,10 +31,6 @@ export default class Tratamientos extends Component {
             <ul>
               <li>Edad entre 18 y 70 años</li>
               <li>Ingresos mínimos de $6,000 pesos</li>
-              <li>
-                En caso de trabajar en el extranjero, el crédito deberá ser
-                tramitado por un familiar o amigo residente en México
-              </li>
             </ul>
             <h3>Documentos:</h3>
 
