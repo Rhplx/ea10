@@ -8,6 +8,8 @@ import Beneficio1 from "../../assets/images/procedimiento.png";
 import Beneficio2 from "../../assets/images/nomina.png";
 import Beneficio3 from "../../assets/images/personales.png";
 import Beneficio4 from "../../assets/images/PyMES.png";
+import Circulo from "../../assets/images/circulo.png";
+import Footer from "../../components/footer/footer.jsx";
 
 export default class Home extends Component {
   render() {
@@ -109,6 +111,49 @@ export default class Home extends Component {
             </div>
           </div>
         </section>
+        <section className="funcionamiento">
+          <h1>¿Cómo funciona?</h1>
+          <img src={Circulo} alt="" />
+        </section>
+        <section className="contactanos">
+          <h1>Contáctanos</h1>
+          <h2>Escríbenos a hola@ea10sm.com</h2>
+          <p>¿En qué préstamo estás interesado?</p>
+          <div className="selectoresPrestamos">
+            <article>
+              <input type="checkbox" name="procedimientos" />
+              <label htmlFor="procedimientos">Procedimientos médicos</label>
+            </article>
+            <article>
+              <input type="checkbox" name="procedimientos" />
+              <label htmlFor="procedimientos">PYMES</label>
+            </article>
+            <article>
+              <input type="checkbox" name="procedimientos" />
+              <label htmlFor="procedimientos">Nómina</label>
+            </article>
+            <article>
+              <input type="checkbox" name="procedimientos" />
+              <label htmlFor="procedimientos">Prestamos personales</label>
+            </article>
+          </div>
+          <form action="">
+            <div className="contenedorDatos">
+              <input type="text" placeholder="Nombre" />
+              <input type="email" placeholder="Correo" />
+              <input type="tel" placeholder="Telefono" />
+            </div>
+            <textarea
+              name="dudas"
+              id="dudas"
+              placeholder="Escribe tus dudas aqui"
+            ></textarea>
+            <div className="contenedorEnviar">
+              <input type="submit" value="Solicitar credito" />
+            </div>
+          </form>
+        </section>
+        <Footer />
       </>
     );
   }
