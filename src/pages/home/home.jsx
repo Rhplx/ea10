@@ -28,7 +28,9 @@ export default class Home extends Component {
           <form className="selectorPrestamo">
             <h2>Simulador de credito</h2>
             <p>Monto deseado</p>
+            <input type="range" defaultValue={0} />
             <p>Plazo</p>
+            <input type="range" defaultValue={0} />
             <div className="datosPrestamo">
               <div className="interesPrestamo">
                 <label htmlFor="">Interes:</label>
@@ -113,47 +115,49 @@ export default class Home extends Component {
             </div>
           </div>
         </section>
-        <section className="funcionamiento">
+        <section id="funcionamiento" className="funcionamiento">
           <h1>¿Cómo funciona?</h1>
           <img src={Circulo} alt="" />
         </section>
-        <section className="contactanos">
-          <h1>Contáctanos</h1>
-          <h2>Escríbenos a hola@ea10sm.com</h2>
-          <p>¿En qué préstamo estás interesado?</p>
-          <div className="selectoresPrestamos">
-            <article>
-              <input type="checkbox" name="procedimientos" />
-              <label htmlFor="procedimientos">Procedimientos médicos</label>
-            </article>
-            <article>
-              <input type="checkbox" name="procedimientos" />
-              <label htmlFor="procedimientos">PYMES</label>
-            </article>
-            <article>
-              <input type="checkbox" name="procedimientos" />
-              <label htmlFor="procedimientos">Nómina</label>
-            </article>
-            <article>
-              <input type="checkbox" name="procedimientos" />
-              <label htmlFor="procedimientos">Prestamos personales</label>
-            </article>
+        <section id="contactanos" className="contactanos">
+          <div className="contenedorContactanos">
+            <h1>Contáctanos</h1>
+            <h2>Escríbenos a hola@ea10sm.com</h2>
+            <p>¿En qué préstamo estás interesado?</p>
+            <div className="selectoresPrestamos">
+              <article>
+                <input type="checkbox" name="procedimientos" />
+                <label htmlFor="procedimientos">Procedimientos médicos</label>
+              </article>
+              <article>
+                <input type="checkbox" name="procedimientos" />
+                <label htmlFor="procedimientos">PYMES</label>
+              </article>
+              <article>
+                <input type="checkbox" name="procedimientos" />
+                <label htmlFor="procedimientos">Nómina</label>
+              </article>
+              <article>
+                <input type="checkbox" name="procedimientos" />
+                <label htmlFor="procedimientos">Prestamos personales</label>
+              </article>
+            </div>
+            <form action="">
+              <div className="contenedorDatos">
+                <input type="text" placeholder="Nombre" />
+                <input type="email" placeholder="Correo" />
+                <input type="tel" placeholder="Telefono" />
+              </div>
+              <textarea
+                name="dudas"
+                id="dudas"
+                placeholder="Escribe tus dudas aqui"
+              ></textarea>
+              <div className="contenedorEnviar">
+                <input type="submit" value="Solicitar credito" />
+              </div>
+            </form>
           </div>
-          <form action="">
-            <div className="contenedorDatos">
-              <input type="text" placeholder="Nombre" />
-              <input type="email" placeholder="Correo" />
-              <input type="tel" placeholder="Telefono" />
-            </div>
-            <textarea
-              name="dudas"
-              id="dudas"
-              placeholder="Escribe tus dudas aqui"
-            ></textarea>
-            <div className="contenedorEnviar">
-              <input type="submit" value="Solicitar credito" />
-            </div>
-          </form>
         </section>
         <Footer />
       </>

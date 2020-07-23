@@ -140,63 +140,71 @@
 }
 .contactanos {
   background-color: var(--AquaBlue);
-  padding: 100px 150px;
-  h1 {
-    font-size: 60px;
-    color: white;
-    font-weight: 400;
-  }
-  h2 {
-    font-size: 30px;
-    color: var(--AquaGreen);
-    font-weight: 400;
-    margin-bottom: 30px;
-  }
-  p {
-    color: var(--AquaGreen);
-  }
-  .selectoresPrestamos {
-    display: grid;
-    width: 60%;
-    margin: 20px auto;
-    grid-template-columns: 1fr 1fr;
-    label {
-      margin-left: 20px;
-      font-size: 15px;
-    }
-  }
-  form {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    width: 60%;
+  .contenedorContactanos {
+    max-width: 1250px;
+    width: 100%;
     margin: auto;
-    grid-gap: 20px;
-    .contenedorDatos {
-      input {
-        width: 100%;
-        margin: 20px 0;
-        border: none;
-        border-radius: 20px;
-        padding: 15px 10px;
-        font-family: "Playfair Display", serif;
+    padding: 50px;
+    h1 {
+      font-size: 60px;
+      color: white;
+      font-weight: 400;
+    }
+    h2 {
+      font-size: 30px;
+      color: var(--AquaGreen);
+      font-weight: 400;
+      margin-bottom: 60px;
+    }
+    p {
+      color: var(--AquaGreen);
+    }
+    .selectoresPrestamos {
+      display: grid;
+      width: 50%;
+      margin: 20px 0;
+      grid-template-columns: 1fr 1fr;
+      label {
+        margin-left: 20px;
         font-size: 15px;
+        font-family: "Playfair Display";
       }
     }
-    textarea {
-      border-radius: 20px;
-      font-size: 15px;
-      padding: 20px;
-    }
-    .contenedorEnviar {
-      grid-column: 2/3;
-      text-align: right;
-      input[type="submit"] {
-        padding: 5px 10px;
-        margin-right: 0;
-        max-width: 150px;
-        border: none;
+    form {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      margin: auto;
+      grid-gap: 20px;
+      .contenedorDatos {
+        input {
+          width: 100%;
+          margin: 20px 0;
+          border: none;
+          border-radius: 20px;
+          padding: 15px 10px;
+          font-family: "Playfair Display", serif;
+          font-size: 15px;
+          box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
+        }
+      }
+      textarea {
         border-radius: 20px;
-        background-color: var(--AquaGreen);
+        font-size: 15px;
+        padding: 20px;
+      }
+      .contenedorEnviar {
+        grid-column: 2/3;
+        text-align: right;
+        input[type="submit"] {
+          font-weight: bold;
+          color: white;
+          padding: 10px 20px;
+          margin-right: 0;
+          max-width: 150px;
+          border: none;
+          border-radius: 20px;
+          background-color: var(--AquaGreen);
+        }
       }
     }
   }

@@ -2,7 +2,6 @@ import React, { Component } from "react";
 import { Link } from "react-router-dom";
 import Logo from "../../assets/images/ea10_logo.png";
 import "./navigation.scss";
-import { Jump } from "react-jump";
 
 export default class Navigation extends Component {
   mostrarPrestamos = () => {
@@ -29,13 +28,13 @@ export default class Navigation extends Component {
             <ul>
               <li onClick={(e) => this.mostrarPrestamos()}>Préstamos</li>
               <li>
-                <Jump target={".funcionamiento"}>Como funciona</Jump>
+                <a href="/#funcionamiento">Como funciona</a>
               </li>
               <li>
                 <Link to="/quienes">Quiénes somos</Link>
               </li>
               <li>
-                <Jump target={".contactanos"}>Contacto</Jump>
+                <a href="/#contactanos">Contacto</a>
               </li>
             </ul>
             <div id="prestamos" className="tiposPrestamos">
