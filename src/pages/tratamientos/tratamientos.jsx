@@ -58,7 +58,9 @@ export default class Tratamientos extends Component {
               <li>Firma de documentación</li>
             </ul>
             <div className="contenedorBoton">
-              <button>Contáctanos</button>
+              <button>
+                <a href="/#contactanos">Contáctanos</a>
+              </button>
             </div>
           </div>
         </div>

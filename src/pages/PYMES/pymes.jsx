@@ -34,11 +34,11 @@ export default class Tratamientos extends Component {
             <ul>
               <li>
                 Ser persona moral o física con actividad empresarial y haber
-                ejercido actividad durante al menos 12 meses.{" "}
+                ejercido actividad durante al menos 12 meses.
               </li>
               <li>
                 Presentar e.Firma(Fiel) del SAT., o bien, presentar los
-                siguientes documentos:{" "}
+                siguientes documentos:
               </li>
               <li>Cedula de identificación fiscal</li>
               <li>
@@ -68,7 +68,9 @@ export default class Tratamientos extends Component {
               <li>Firma de documentación</li>
             </ul>
             <div className="contenedorBoton">
-              <button>Contáctanos</button>
+              <button>
+                <a href="/#contactanos">Contáctanos</a>
+              </button>
             </div>
           </div>
         </div>

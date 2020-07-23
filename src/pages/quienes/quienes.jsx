@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import Navigation from "../../components/navigation/navigation.jsx";
+import Footer from "../../components/footer/footer.jsx";
 import "./quienes.scss";
 import imagenQuienes from "../../assets/images/quienes.png";
 
@@ -26,6 +27,7 @@ export default class Quienes extends Component {
             <p>Prestamos PYMES</p>
           </div>
         </div>
+        <Footer />
       </>
     );
   }

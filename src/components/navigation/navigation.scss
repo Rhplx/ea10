@@ -18,6 +18,8 @@ nav {
 
         a {
           text-decoration: none;
+          color: black;
+
           &:visited {
             color: black;
           }
@@ -30,6 +32,7 @@ nav {
     .tiposPrestamos {
       display: none;
       position: absolute;
+      z-index: 2000;
       background-color: white;
       max-width: 220px;
       padding: 20px 10px;
