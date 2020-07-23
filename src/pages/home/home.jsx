@@ -51,7 +51,7 @@ export default class Home extends Component {
 
     var totalPagado = monto*interes;
     totalPagado = totalPagado.toFixed(2);
-    
+
     var totalMensual = totalPagado/plazo;
 
     totalMensual = totalMensual.toFixed(2);
@@ -78,9 +78,23 @@ export default class Home extends Component {
           </div>
           <form className="selectorPrestamo">
             <h2>Simulador de credito</h2>
-            <p>Monto deseado <span id="montoActual">5000</span></p>
+            <div className="datosPrestamo1">
+              <div>
+                <p>Monto deseado</p>
+              </div>
+              <div>
+                <p id="montoActual">5000</p>
+              </div>
+            </div>
             <input id="montoDeseado" type="range" defaultValue={0}  min="0" max="295" onChange={(e) => this.cotizador(e)} />
-            <p>Plazo <span id="plazoActual">6</span></p>
+            <div className="datosPrestamo1">
+              <div>
+                <p>Plazo</p>
+              </div>
+              <div>
+                <p id="plazoActual">6</p>
+              </div>
+            </div>
             <input id="plazo" type="range" defaultValue={0} min="0" max="3" onChange={(e) => this.cotizador(e)} />
             <div className="datosPrestamo">
               {/* <div className="interesPrestamo">
