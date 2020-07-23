@@ -13,6 +13,57 @@ import Footer from "../../components/footer/footer.jsx";
 import Navigation from "../../components/navigation/navigation.jsx";
 
 export default class Home extends Component {
+
+
+  cotizador = (e) => {
+
+    e.preventDefault();
+
+    var monto = document.getElementById("montoDeseado").value*1000;
+    monto = monto + 5000;
+    document.getElementById("montoActual").innerHTML = monto;
+    console.log(monto);
+
+    var plazo = document.getElementById("plazo").value;
+    
+    switch(plazo){
+      case "0":
+        plazo = 6;
+        document.getElementById("plazoActual").innerHTML = plazo;
+        break;
+      case "1": 
+        plazo = 12;
+        document.getElementById("plazoActual").innerHTML = plazo;
+        break;
+      case "2":
+        plazo = 18;
+        document.getElementById("plazoActual").innerHTML = plazo;
+        break;
+      case "3": 
+        plazo = 24;
+        document.getElementById("plazoActual").innerHTML = plazo;
+        break;
+      default:
+        break;
+    }
+    console.log(plazo);
+    var interes = 0.029*plazo;
+
+    var totalPagado = monto*interes;
+    totalPagado = totalPagado.toFixed(2);
+    
+    var totalMensual = totalPagado/plazo;
+
+    totalMensual = totalMensual.toFixed(2);
+    
+    document.getElementById("pagoMensual").value = totalMensual;
+    document.getElementById("totalPagado").value = totalPagado;
+
+
+
+  }
+
+
   render() {
     return (
       <>
@@ -21,28 +72,28 @@ export default class Home extends Component {
           <div className="textoPrincipal">
             <h1>No cambies tu felicidad por dinero</h1>
             <p>
-              Prestamos de 5,000 hasta 200,000 pesos, sin pagos anticipados, con
+              Prestamos de 5,000 hasta 300,000 pesos, sin pagos anticipados, con
               tasas de interés desde 5.5%
             </p>
           </div>
           <form className="selectorPrestamo">
             <h2>Simulador de credito</h2>
-            <p>Monto deseado</p>
-            <input type="range" defaultValue={0} />
-            <p>Plazo</p>
-            <input type="range" defaultValue={0} />
+            <p>Monto deseado <span id="montoActual">5000</span></p>
+            <input id="montoDeseado" type="range" defaultValue={0}  min="0" max="295" onChange={(e) => this.cotizador(e)} />
+            <p>Plazo <span id="plazoActual">6</span></p>
+            <input id="plazo" type="range" defaultValue={0} min="0" max="3" onChange={(e) => this.cotizador(e)} />
             <div className="datosPrestamo">
-              <div className="interesPrestamo">
+              {/* <div className="interesPrestamo">
                 <label htmlFor="">Interes:</label>
-                <input type="text" disabled value="__" />
-              </div>
+                <input type="text" disabled value="2.9%" />
+              </div> */}
               <div className="mensualPrestamo">
                 <label htmlFor="">Pago mensual:</label>
-                <input type="text" disabled value="__" />
+                <input id="pagoMensual" type="text" disabled value="__" />
               </div>
               <div className="totalPrestamo">
                 <label htmlFor="">Total pagado:</label>
-                <input type="text" disabled value="__" />
+                <input id="totalPagado" type="text" disabled value="__" />
               </div>
             </div>
             <button type="submit">Solicitar crédito</button>

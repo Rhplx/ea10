@@ -4,13 +4,10 @@ import Logo from "../../assets/images/ea10_logo.png";
 import "./navigation.scss";
 
 export default class Navigation extends Component {
-  mostrarPrestamos = () => {
+  mostrarPrestamos = (hover) => {
     let bloquePrestamos = document.getElementById("prestamos");
 
-    if (
-      bloquePrestamos.style.display === "" ||
-      bloquePrestamos.style.display === "none"
-    ) {
+    if (hover){
       bloquePrestamos.style.display = "block";
     } else {
       bloquePrestamos.style.display = "none";
@@ -26,7 +23,7 @@ export default class Navigation extends Component {
           </Link>
           <div className="contenedorEnlaces">
             <ul>
-              <li onClick={(e) => this.mostrarPrestamos()}>Préstamos</li>
+              <li onMouseEnter={() => this.mostrarPrestamos(true)}>Préstamos</li>
               <li>
                 <a href="/#funcionamiento">Como funciona</a>
               </li>
@@ -37,7 +34,7 @@ export default class Navigation extends Component {
                 <a href="/#contactanos">Contacto</a>
               </li>
             </ul>
-            <div id="prestamos" className="tiposPrestamos">
+            <div id="prestamos" className="tiposPrestamos" onMouseLeave={() => this.mostrarPrestamos(false)}>
               <ul>
                 <li>
                   <Link to="/tratamientos">Procedimientos medicos</Link>

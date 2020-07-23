@@ -3,11 +3,14 @@
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  margin-top: 50px;
-  padding: 50px 0;
+  padding: 50px 0px 144px;;
   display: grid;
   grid-template-columns: 2fr 1fr;
-
+  
+  input[type=range]{
+    color:yellow;
+    min-width: -webkit-fill-available;
+  }
   .textoPrincipal {
     text-align: center;
     padding: 30px;
