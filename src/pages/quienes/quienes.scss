@@ -28,10 +28,12 @@
       font-family: "Playfair Display", serif;
       font-weight: 300;
     }
-    p {
+    a {
       color: var(--AquaGreen);
       margin: 10px 0;
       font-family: "Playfair Display", serif;
+      text-decoration: none;
+      display: block;
     }
   }
 }

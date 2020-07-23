@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import Navigation from "../../components/navigation/navigation.jsx";
 import Footer from "../../components/footer/footer.jsx";
+import { Link } from "react-router-dom";
 import "./quienes.scss";
 import imagenQuienes from "../../assets/images/quienes.png";
 
@@ -21,10 +22,12 @@ export default class Quienes extends Component {
               acorde a las necesidades de nuestros clientes.
             </h1>
 
-            <p>Créditos para cirugías y tratamientos médicos.</p>
-            <p>Prestamos vía nomina</p>
-            <p>Prestamos personales</p>
-            <p>Prestamos PYMES</p>
+            <Link to="/tratamientos">
+              Créditos para cirugías y tratamientos médicos.
+            </Link>
+            <Link to="/nomina">Prestamos vía nomina</Link>
+            <Link to="/personales">Prestamos personales</Link>
+            <Link to="/pymes">Prestamos PYMES</Link>
           </div>
         </div>
         <Footer />
