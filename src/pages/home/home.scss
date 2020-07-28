@@ -1,3 +1,19 @@
+
+@font-face {
+  font-family: PlayFair;
+  src: url("../../assets/font/PlayfairDisplay-Regular.ttf");
+}
+
+.playfair{
+  font-family: PlayFair;
+}
+
+body a{
+  text-decoration: none;
+  color: black;
+}
+
+
 .principal {
   background-image: url("../../assets/images/mujer2.jpg");
   background-position: center;
@@ -6,10 +22,16 @@
   padding: 50px 0px 144px;;
   display: grid;
   grid-template-columns: 2fr 1fr;
+
   
   input[type=range]{
-    color:yellow;
     min-width: -webkit-fill-available;
+  }
+
+  .montosVerde{
+    color: #70E4BF;
+    font-size: 18px;
+
   }
   .textoPrincipal {
     text-align: center;
@@ -65,6 +87,7 @@
           background-color: transparent;
           border: none;
           color: var(--AquaGreen);
+          font-weight: bolder;
         }
       }
     }
@@ -102,11 +125,11 @@
 .tipos {
   background-color: var(--AquaBlue);
   .contenedorTipos {
-    padding: 50px 150px;
+    padding: 50px 194px 50px;
     text-align: center;
 
     h1 {
-      font-size: 30px;
+      font-size: 40px;
       border-bottom: 3px solid transparent;
 
       span {
@@ -121,7 +144,7 @@
       margin-top: 50px;
       .tipoPrestamo {
         background-color: white;
-        padding: 20px 10px;
+        padding: 58px 42px;
         border-radius: 8px;
         box-shadow: rgba(0, 0, 0, 0.5);
         font-family: "Playfair Display", serif;
@@ -141,7 +164,7 @@
   }
 }
 .funcionamiento {
-  padding: 50px 50px;
+  //padding: 50px 50px;
   background-image: url("../../assets/images/manos.png");
   background-position: center;
   background-repeat: no-repeat;
