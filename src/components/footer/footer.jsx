@@ -6,7 +6,7 @@ export default class Footer extends Component {
     return (
       <>
         <footer>
-          <h3>EA10 Support México ® 2020 - <a href="/avisoPrivacidad.docx" target="_blank">Aviso de Privacidad</a></h3>
+          <h3>EA10 Support México ® 2020 - <a href="/avisoPrivacidad.docx" target="_blank" style={{color:"white"}}>Aviso de Privacidad</a></h3>
         </footer>
       </>
     );
